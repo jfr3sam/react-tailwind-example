@@ -1,0 +1,177 @@
+/* src/styles/app-themes.css */
+/*
+  !!! USER ACTION REQUIRED !!!
+  PASTE THE EXACT CONTENT OF YOUR EXPORTED THEME CSS FILE HERE.
+  This file should define CSS variables for light mode (e.g., under :root)
+  and dark mode (e.g., under a .dark class).
+
+  Example based on your provided 'my-themes.css':
+*/
+
+:root { /* Or :root, .theme-light - ensure consistency with your theme switcher */
+  /* --- Light Theme (Default) --- */
+  --scrim: #4F4F4F;
+  --accent: #FFD700;
+  --info-bg: #D3E5F7;
+  --error-bg: #F7CAC9;
+  --primary: #456978;
+  --avatar-bg: #E5E5EA;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --info-icon: #56B3FA;
+  --info-text: #56B3FA;
+  --on-accent: #000000;
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --surface1: #FFFFFF; /* Maps to surface.1 in Tailwind */
+  --surface2: #E5E5EA; /* Maps to surface.2 in Tailwind */
+  --text-link: #456978;
+  --error-icon: #E67E73;
+  --error-text: #E67E73;
+  --focus-ring: 0 0 0 3px rgba(59, 130, 246, 0.4);
+  --font-stack: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --icon-muted: #999999;
+  --on-primary: #FFFFFF;
+  --panel-text: #212529;
+  --secondary: #E67E73;
+  --success-bg: #C6F4D6;
+  --text-muted: #666666;
+  --warning-bg: #F7DC6F;
+  --background: #F7F7F7;
+  --disabled-bg: #F7F7F7;
+  --info-border: #56B3FA;
+  --on-surface1: #000000;  /* Maps to on-surface.1 in Tailwind */
+  --on-surface2: #444444;  /* Maps to on-surface.2 in Tailwind */
+  --selected-bg: #E5E5EA;
+  --text-strong: #000000;
+  --border-focus: #456978;
+  --error-border: #E67E73;
+  --icon-default: #666666;
+  --on-secondary: #FFFFFF;
+  --panel-border: #dee2e6;
+  --slider-thumb: #E5E5EA;
+  --slider-track: #D9D9D9;
+  --success-icon: #67E67E;
+  --success-text: #67E67E;
+  --text-default: #333333;
+  --warning-icon: #F2C464;
+  --warning-text: #F2C464;
+  --border-strong: #999999;
+  --border-subtle: #D9D9D9;
+  --icon-disabled: #CCCCCC;
+  --on-background: #000000;
+  --primary-hover: #3E5667;
+  --text-disabled: #CCCCCC;
+  --panel-header-bg: #f8f9fa;
+  --primary-active: #364C5E;
+  --primary-subtle: #6495ED;
+  --progress-track: #D9D9D9;
+  --success-border: #67E67E;
+  --text-link-hover: #3E5667;
+  --warning-border: #F2C464;
+  --panel-text-muted: #6c757d;
+  --secondary-hover: #D96C68;
+  --surface-inverse: #2E4053;
+  --disabled-content: #CCCCCC;
+  --on-primary-subtle: #F7F7F7;
+  --panel-background: #ffffff;
+  --primary-emphasis: #2E4053;
+  --secondary-active: #C95B5C;
+  --secondary-subtle: #F7D2C4;
+  --selected-content: #000000;
+  --text-placeholder: #999999;
+  --on-surface-inverse: #FFFFFF;
+  --panel-input-border: #ced4da;
+  --border-interactive: #C7C5B8;
+  --input-border-radius: 8px;
+  --on-secondary-subtle: #F7F7F7;
+  --progress-indicator: #456978;
+  --slider-track-active: #456978;
+  --panel-section-border: #e9ecef;
+  --panel-input-focus-ring: rgba(59, 130, 246, 0.2);
+}
+
+.dark { /* Assuming theme switcher applies .dark class */
+  /* --- Dark Theme --- */
+  --scrim: #4F4F4F;
+  --accent: #FFD700;
+  --info-bg: #2F4F7F;
+  --error-bg: #8B0A1A;
+  --primary: #2E4053;
+  --avatar-bg: #404C59;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --info-icon: #56B3FA;
+  --info-text: #56B3FA;
+  --on-accent: #000000;
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px -1px rgba(0, 0, 0, 0.15);
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  --surface1: #364C5E; /* Maps to surface.1 in Tailwind */
+  --surface2: #404C59; /* Maps to surface.2 in Tailwind */
+  --text-link: #6495ED;
+  --error-icon: #C95B5C;
+  --error-text: #C95B5C;
+  --focus-ring: 0 0 0 3px rgba(96, 165, 250, 0.5);
+  --font-stack: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --icon-muted: #666666;
+  --on-primary: #F7F7F7;
+  --panel-text: #f8f9fa;
+  --secondary: #C95B5C;
+  --success-bg: #34C759;
+  --text-muted: #999999;
+  --warning-bg: #786C3B;
+  --background: #2E4053;
+  --disabled-bg: #404C59;
+  --info-border: #56B3FA;
+  --on-surface1: #F7F7F7; /* Maps to on-surface.1 in Tailwind */
+  --on-surface2: #CCCCCC; /* Maps to on-surface.2 in Tailwind */
+  --selected-bg: #364C5E;
+  --text-strong: #FFFFFF;
+  --border-focus: #6495ED;
+  --error-border: #C95B5C;
+  --icon-default: #999999;
+  --on-secondary: #F7F7F7;
+  --panel-border: #495057;
+  --slider-thumb: #364C5E;
+  --slider-track: #5C5C5C;
+  --success-icon: #67E67E;
+  --success-text: #67E67E;
+  --text-default: #CCCCCC;
+  --warning-icon: #F2C464;
+  --warning-text: #F2C464;
+  --border-strong: #666666;
+  --border-subtle: #444444;
+  --icon-disabled: #444444;
+  --on-background: #FFFFFF;
+  --primary-hover: #364C5E;
+  --text-disabled: #666666;
+  --panel-header-bg: #343a40;
+  --primary-active: #3E5667;
+  --primary-subtle: #456978;
+  --progress-track: #5C5C5C;
+  --success-border: #67E67E;
+  --text-link-hover: #56B3FA;
+  --warning-border: #F2C464;
+  --panel-text-muted: #adb5bd;
+  --secondary-hover: #D96C68;
+  --surface-inverse: #F7F7F7;
+  --disabled-content: #666666;
+  --on-primary-subtle: #FFFFFF;
+  --panel-background: #212529;
+  --primary-emphasis: #6495ED;
+  --secondary-active: #E67E73;
+  --secondary-subtle: #F7D2C4;
+  --selected-content: #F7F7F7;
+  --text-placeholder: #666666;
+  --on-surface-inverse: #000000;
+  --panel-input-border: #6c757d;
+  --border-interactive: #5C5C5C;
+  --input-border-radius: 8px;
+  --on-secondary-subtle: #FFFFFF;
+  --progress-indicator: #6495ED;
+  --slider-track-active: #6495ED;
+  --panel-section-border: #495057;
+  --panel-input-focus-ring: rgba(96, 165, 250, 0.3);
+}

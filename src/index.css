@@ -1,0 +1,33 @@
+/* src/index.css */
+
+/* User imports their theme variables from the file they created/pasted into */
+@import './styles/app-themes.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styles using THEME variables (not app-shell variables) */
+body {
+  background-color: var(--background);
+  color: var(--text-default);
+  font-family: var(--font-stack);
+  /* Add a transition for smoother theme changes on the body itself */
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+/* Optional: Define some custom reusable components using @apply and theme variables */
+.btn {
+  @apply px-4 py-2 rounded-input font-medium transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-focus focus:ring-offset-2 focus:ring-offset-background;
+}
+.btn-primary {
+  @apply bg-primary text-on-primary hover:bg-primary-hover active:bg-primary-active;
+}
+.btn-secondary {
+  @apply bg-secondary text-on-secondary hover:bg-secondary-hover active:bg-secondary-active;
+}
+.input-field {
+  @apply block w-full px-3 py-2 border border-border-interactive bg-background text-text placeholder-text-placeholder rounded-input focus:outline-none focus:ring-2 focus:ring-border-focus focus:border-transparent;
+}
+
+/* Add any other global styles or component base styles here */
