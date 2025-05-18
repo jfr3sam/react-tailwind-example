@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-background dark:bg-background">
       {/* Header */}
-      <header className="bg-surface-1 dark:bg-surface-1 p-4 border-b border-border-subtle dark:border-border-subtle shadow-sm">
+      <header className="bg-surface-1 sticky top-0 dark:bg-surface-1 p-4 border-b border-border-subtle dark:border-border-subtle shadow-sm">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl md:text-4xl font-bold text-primary dark:text-primary">
             Themed UI Kit
@@ -32,8 +32,8 @@ function App() {
           <button
             onClick={() => setActiveTab('demo')}
             className={`px-4 py-2 font-medium ${activeTab === 'demo'
-                ? 'text-primary dark:text-primary border-b-2 border-primary dark:border-primary -mb-px'
-                : 'text-text-muted dark:text-text-muted hover:text-text-default dark:hover:text-text-default'
+              ? 'text-primary dark:text-primary border-b-2 border-primary dark:border-primary -mb-px'
+              : 'text-text-muted dark:text-text-muted hover:text-text-default dark:hover:text-text-default'
               }`}
           >
             Components
@@ -41,8 +41,8 @@ function App() {
           <button
             onClick={() => setActiveTab('palette')}
             className={`px-4 py-2 font-medium ${activeTab === 'palette'
-                ? 'text-primary dark:text-primary border-b-2 border-primary dark:border-primary -mb-px'
-                : 'text-text-muted dark:text-text-muted hover:text-text-default dark:hover:text-text-default'
+              ? 'text-primary dark:text-primary border-b-2 border-primary dark:border-primary -mb-px'
+              : 'text-text-muted dark:text-text-muted hover:text-text-default dark:hover:text-text-default'
               }`}
           >
             Color Palette
