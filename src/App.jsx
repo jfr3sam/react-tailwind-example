@@ -175,7 +175,7 @@ function App() {
         {activeTab === 'palette' && <ColorPalette />}
       </main>
 
-      <footer className="bg-surface-1 dark:bg-surface-1 border-t border-border-subtle dark:border-border-subtle mt-auto py-4">
+      <footer className="bg-surface-1 dark:bg-surface-1 border-t border-border-subtle dark:border-border-subtle py-4">
         <div className="container mx-auto px-4 text-center text-sm text-text-muted dark:text-text-muted">
           <p>© {new Date().getFullYear()} Theme Editor Pro Demo. All rights reserved.</p>
           <p className="mt-1">
@@ -183,6 +183,7 @@ function App() {
           </p>
         </div>
       </footer>
+
     </div>
   );
 }
