@@ -122,7 +122,7 @@ Visit [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 📚 Learn More
 
-- [Theme Editor Pro](https://themeeditor.pro)
+- [Theme Editor Pro]()
 - [Tailwind CSS](https://tailwindcss.com/docs)
 - [Vite](https://vitejs.dev/)
 
